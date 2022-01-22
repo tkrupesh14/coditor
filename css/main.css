@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    height: 30px;
+}
+.navbar-brand{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    right: 6.2em;
+}
+
+/* file menu */
+.file-menu{
+    width: 200px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    /* transition: opacity 500ms ease; */
+    position: fixed;
+}
+.file-menu.active{
+    opacity: 1;
+    pointer-events: all;
+
+}
+.file-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.file-menu ul li a{
+    text-decoration: none;
+    font-family: poppins;
+    background: #fff;
+    padding: 10px 32px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    /* transition: all 400ms; */
+    
+}
+.file-menu ul li a:hover{
+    background: #212529;
+    border-left: 4px solid #fff;
+    color: #fff;
+}
+/* file menu end */
+
+
+/* edit menu */
+.edit-menu{
+    width: 200px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    /* transition: opacity 500ms ease; */
+    position: fixed;
+}
+.edit-menu.active{
+    opacity: 1;
+    pointer-events: all;
+
+}
+.edit-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.edit-menu ul li a{
+    text-decoration: none;
+    font-family: poppins;
+    background: #fff;
+    padding: 10px 32px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    /* transition: all 400ms; */
+    
+}
+.edit-menu ul li a:hover{
+    background: #212529;
+    border-left: 4px solid #fff;
+    color: #fff;
+}
+/* edit menu end */
+
+
+/* code editor */
+.main{
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+
+}
+#editor-textarea{
+    width: 41vw;
+    height: 95vh;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+#viewer{
+    background-color: #fff;
+    border: none;
+    width: 41vw;    
+    height: 95vh;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #3488db;
+}
